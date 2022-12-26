@@ -28,7 +28,7 @@ function chuteNaoNumerico(numero) {
     return Number.isNaN(numero);
 }
 
-function numeroMaiorOuMenorQueIntervalo(chute) {
+function numeroMaiorOuMenorQueIntervalo(numero) {
     return numero > maiorValor || numero < menorValor;
 }
 
