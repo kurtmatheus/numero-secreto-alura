@@ -3,10 +3,12 @@ function verificacaoDeChute(chute) {
 
     if(chuteNaoNumerico(numero)){
         elementoChute.innerHTML += '<div>Valor Não númerico inválido!</div>';
+        return
     }
 
     if(numeroMaiorOuMenorQueIntervalo(numero)){
         elementoChute.innerHTML += `<div>Valor Inválido. Fale um Número entre ${menorValor} e ${maiorValor}</div>`;
+        return
     }
 
     if(numero === numeroAleatorio) {
